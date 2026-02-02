@@ -1,0 +1,50 @@
+# FilmReader 依赖包列表
+# 
+# 安装方法：
+#   pip install -r requirements.txt
+#
+# 核心依赖（必需）:
+#   - Pillow: 图像处理
+#   - mss: 屏幕捕获（推荐，性能最好）
+#   - edge-tts: Edge TTS 语音合成（免费，推荐）
+#   - pygame: 音频播放
+#
+# OCR 依赖（至少选择一个）:
+#   - pytesseract: Tesseract OCR 包装器（需要额外安装 Tesseract）
+#
+# 可选依赖：
+#   - pydub: 音频处理（如需使用 pydub 播放器）
+#   - pyautogui: 屏幕捕获（备选方案）
+#   - numpy: 数组处理（某些 OCR 需要）
+#   - opencv-python: 图像处理（高级功能）
+
+# 核心依赖
+Pillow>=10.0.0
+mss>=9.0.0
+edge-tts>=6.1.0
+pygame>=2.5.0
+
+# 代理支持（如需使用 SOCKS5 代理访问 Edge-TTS）
+aiohttp-socks>=0.8.0  # SOCKS5 代理支持
+pyttsx3>=2.90
+
+# OCR 依赖
+pytesseract>=0.3.10
+
+# 本地 OCR 引擎（推荐）
+rapidocr-onnxruntime>=1.3.0  # 快速、准确的本地 OCR（推荐用于字幕）
+# paddlepaddle>=2.5.0  # PaddleOCR 依赖（可选，较大）
+# paddleocr>=2.7.0  # 高精度 OCR（可选）
+
+# 可选依赖
+# pydub>=0.25.1  # 备选音频播放器
+# numpy>=1.24.0  # 数组处理
+# opencv-python>=4.8.0  # 高级图像处理
+# pyautogui>=0.9.54  # 备选屏幕捕获
+# easyocr>=1.7.0  # 备选 OCR 引擎
+# winrt>=1.0.21033.1  # Windows OCR（仅 Windows）
+
+# 未来扩展（AI 功能，预留）
+# openai>=1.0.0  # OpenAI API（GPT-4 Vision, TTS 等）
+# anthropic>=0.3.0  # Claude API（Vision 等）
+# azure-cognitiveservices-speech>=1.31.0  # Azure TTS

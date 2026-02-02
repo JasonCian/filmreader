@@ -1,0 +1,59 @@
+{
+  "ocr": {
+    "engine": "tesseract",
+    "language": "chi_sim",
+    "confidence_threshold": 0.3,
+    "tesseract_path": "D:/Programs/tesseractOCR/tesseract.exe",
+    "tesseract_psm": 7,
+    "preprocess_enable": true,
+    "preprocess_grayscale": true,
+    "preprocess_threshold": 160,
+    "preprocess_invert": false,
+    "preprocess_auto_threshold": true,
+    "preprocess_scale": 2.0,
+    "ai_model": null,
+    "ai_api_key": null,
+    "ai_endpoint": null
+  },
+  "tts": {
+    "engine": "edge-tts",
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": "+0%",
+    "volume": "+0%",
+    "pitch": "+0Hz",
+    "fallback_engine": "pyttsx3",
+    "fallback_voice": null,
+    "fallback_rate": null,
+    "ai_voice_model": null,
+    "ai_api_key": null,
+    "voice_clone_sample": null
+  },
+  "capture": {
+    "region": {
+      "x": 0,
+      "y": 900,
+      "width": 1920,
+      "height": 100
+    },
+    "interval": 1.0,
+    "method": "mss"
+  },
+  "gui": {
+    "framework": "tkinter",
+    "theme": "default",
+    "window_size": {
+      "width": 700,
+      "height": 500
+    },
+    "always_on_top": false,
+    "start_minimized": false
+  },
+  "hotkey": {
+    "enable": true,
+    "start_stop": "F9",
+    "pause_resume": "F10"
+  },
+  "log_level": "INFO",
+  "log_file": null,
+  "auto_start": false
+}
